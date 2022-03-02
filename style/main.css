@@ -1,0 +1,104 @@
+:root{
+    --vermelho:#E50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content:space-between;
+}
+
+.container{
+    margin-left: 10px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+header nav a{
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+    
+}
+
+header nav a:hover{
+    color: #FFF;
+}
+
+header .logo{
+    color:var(--vermelho);
+    font-family:'Arial Black';
+    font-size: 40px;
+    margin-left: 5px;       
+}
+
+/*FILME PRINCIPAL*/
+
+.filme-principal{
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0.50)100%), url("/img/toy.jpg");
+    height: 400px;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 90px;
+    margin-top: 15px;
+}
+
+.filme-principal .titulo{
+    font-size: 40px;
+    margin-top: 15%;
+    
+}
+
+.botao{
+    background-color: rgba(10,40,0,.30);
+    border: none;
+    color: white;
+    padding: 15px;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor:pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: #FFF;
+    color:black;
+}
+
+.botao i{
+    margin-left: 5px;
+}
+
+.box-filmes{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 5px;
+
+}
